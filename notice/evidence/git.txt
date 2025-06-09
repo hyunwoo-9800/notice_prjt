@@ -1,0 +1,2 @@
+-- 깃 주소
+https://github.com/hyunwoo-9800/notice_prjt.git
