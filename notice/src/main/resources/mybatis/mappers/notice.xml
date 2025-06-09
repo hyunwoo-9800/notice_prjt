@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.human.notice.repository.NoticeDAO">
+
+	<!-- 결과 매핑 -->
+	<resultMap id="noticeResult" type="com.human.notice.vo.NoticeVO">
+		<result property="n_idx" column="n_idx" />
+		<result property="n_category" column="n_category" />
+		<result property="n_title" column="n_title" />
+		<result property="n_content" column="n_content" />
+		<result property="n_regdate" column="n_regdate" />
+		<result property="n_update" column="n_update" />
+		<result property="n_status" column="n_status" />
+	</resultMap>
+
+
+	<!-- 게시글 전체 목록 -->
+	<select id="selectAllNotice" resultMap="noticeResult">
+		<![CDATA[
+            SELECT
+				N_IDX,
+				N_CATEGORY,
+				N_TITLE,
+				N_CONTENT,
+				N_REGDATE,
+				N_UPDATE,
+				N_STATUS
+			FROM
+    			TB_NOTICE
+        ]]>
+	</select>
+
+</mapper>
