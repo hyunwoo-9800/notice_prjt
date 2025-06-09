@@ -12,11 +12,14 @@ import java.util.List;
 @Transactional
 public class NoticeServiceImpl implements NoticeService {
 
+    // 매퍼 인스턴스화
     @Autowired
     NoticeDAO noticeDAO;
 
     @Override
     public List<NoticeVO> listNotice() throws Exception {
+
+        // 전체 공지사항 조회
         List<NoticeVO> noticeList = noticeDAO.selectAllNotice();
         return noticeList;
     }

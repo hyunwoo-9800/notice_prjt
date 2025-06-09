@@ -17,7 +17,7 @@
 	</resultMap>
 
 
-	<!-- 게시글 전체 목록 -->
+	<!-- 공지사항 전체 목록 -->
 	<select id="selectAllNotice" resultMap="noticeResult">
 		<![CDATA[
             SELECT

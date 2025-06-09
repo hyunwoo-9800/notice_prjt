@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+// 컨트롤러 인터페이스 구현 객체
 @Controller
 @RequestMapping("/notice")
 public class NoticeControllerImpl implements NoticeController {

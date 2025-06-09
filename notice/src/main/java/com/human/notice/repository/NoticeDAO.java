@@ -9,6 +9,7 @@ import java.util.List;
 @Mapper
 public interface NoticeDAO {
 
+    // 전체 공지사항 조회
     public List<NoticeVO> selectAllNotice() throws DataAccessException;
 
 }
